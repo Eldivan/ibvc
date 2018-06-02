@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <%= favicon_link_tag 'favicon.ico' %>
+    <title> </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+   
+    <nav class="menu navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <img src="<%= image_url 'mini Logo ibvc.png'%>" height="40" width="40" class="..." alt="...">
+        <ul>
+          <li>Principal
+              <ul>
+                <li>Artigos
+                    <ul>
+                      <li>Sub-menu maio </li>
+                      <li>Sub-menu junho</li>
+                      <li>Sub-menu julho</li>
+                      <li>Sub-meu agosto</li>
+                    </ul>
+                </li>
+                <li>Noticias
+                  <ul>
+                    <li>Sub-menu laranja</li>
+                    <li>Sub-menu maça</li>
+                    <li>Sub-menu pera</li>
+                    <li>Sub-menu limão</li>
+                  </ul>
+                </li>
+              </ul>
+          </li>
+          <li>Departamentos 
+              <ul>
+                  <li>Adolescentes</li>
+                  <li>Casais</li>
+                  <li>Crianças</li>
+                  <li>Evangelismo</li>
+                  <li>Homens</li>
+                  <li>Jovens</li>
+                  <li>Mulheres</li>
+                  <li>###</li>
+              </ul>
+          </li>
+          <li>Eventos
+             <ul>
+                <li>Mês da EBD</li>
+             </ul>
+          </li>
+          <li>Agenda
+             <ul>
+               <li>Janeiro</li>
+               <li>Feveiro</li>
+               <li>Março</li>
+               <li>Maio</li>
+               <li>Junho</li>
+               <li>Julho</li>
+               <li>Agosto</li>
+               <li>Setembro</li>
+               <li>Outubro</li>
+               <li>Novembro</li>
+               <li>Dezembro</li>   
+             </ul>
+          </li>
+          <li>Onde estamos
+             <ul>
+               <li>SOF</li>
+             </ul>
+          </li>
+          <li>Contato
+             <ul>
+               <li>Thais</li>
+             </ul>
+          </li>
+          <li>Loja
+             <ul>
+               <li>Camisetas EBD</li>
+             </ul> 
+          </li>
+        </ul>        
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

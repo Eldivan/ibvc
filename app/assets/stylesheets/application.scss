@@ -1,0 +1,49 @@
+ @import "bootstrap";
+ @import "users";
+
+ .menu ul li {
+ 		
+        background-color:#d87213; 
+        color: white;
+        float: left;
+        width: 120px;
+        height: 40px; 
+        display: inline-block;   
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+        position: relative ;
+
+      }
+
+      .menu ul li:hover{
+        background-color:#e58714; 
+      }
+
+      .menu ul{
+        padding: 0;
+      }
+    
+      .menu ul ul {
+        display: none;
+      }
+
+      .menu ul li:hover > ul{
+        display: block; 
+      }  
+      
+      .menu ul ul ul {
+        margin-left:121px ; 
+        top: 0px;
+        position: absolute;
+      }
+
+      .menu ul ul li :hover{
+        background-color: #a2b5e5; 
+      }
+
+      .menu ul ul ul li:hover {
+        background-color: #a2e5e1;
+      }
+
+      

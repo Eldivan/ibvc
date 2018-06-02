@@ -1,0 +1,80 @@
+<div class="jumbotron formulario">
+
+<%= form_with(model: user, local: true, class: 'form-group') do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="nome">
+    <%= form.label 'Nome' %> <%=form.label:* %>
+    <%= form.text_field :name, class: 'form-control',placeholder:'Nome'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexo %>
+    <%= form.text_field :sex , class: 'form-control',placeholder:'Sexo' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CPF %>
+    <%= form.text_field :cpf, class: 'form-control',placeholder:'CPF' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Identidade %>
+    <%= form.text_field :identity , class: 'form-control',placeholder:'Identidade'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_Nascimento %>
+    <%= form.date_select :date_birth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Celular%>
+    <%= form.text_field :cell_phone , class: 'form-control',placeholder:'Celular'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :Email %>
+    <%= form.text_field :email , class: 'form-control',placeholder:'Email'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_de_Inclusão %>
+    <%= form.date_select :date_inclusion , class: 'form-control',placeholder:'Data_de_Inclusão'%>
+  </div>
+
+  <div class="estado_civil">
+    <%= form.label :Estado_Civil %><%=form.label:* %>
+    <%= form.text_field :marital_status , class: 'form-control',placeholder:'Estado_Civil'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :Profissão %>
+    <%= form.text_field :professional , class: 'form-control',placeholder:'Profissão'%>
+  </div>
+
+  <div class="field">
+    <%= form.label :admin %>
+    <%= form.text_field :admin,class: 'form-control',placeholder:'Administrador' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Ativo %>
+    <%= form.text_field :active ,  class: 'form-control',placeholder:'Ativo'%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Enviar', class: 'btn btn-primary' %>
+  </div>
+<% end %>
+</div>
