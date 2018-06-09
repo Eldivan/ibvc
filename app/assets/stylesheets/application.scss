@@ -1,8 +1,9 @@
  @import "bootstrap";
+ @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
  @import "users";
 
  .menu ul li {
- 		
+ 		  
         background-color:#d87213; 
         color: white;
         float: left;
@@ -15,13 +16,16 @@
         position: relative ;
 
       }
+      
 
       .menu ul li:hover{
+
         background-color:#e58714; 
       }
 
       .menu ul{
         padding: 0;
+         
       }
     
       .menu ul ul {
@@ -46,4 +50,55 @@
         background-color: #a2e5e1;
       }
 
-      
+
+ .menu2 li {
+          
+      line-height: 40px;
+      margin-left: 20px;
+
+
+
+}
+
+      .botaoenviar {
+          margin-top: 30px;
+          
+      }
+
+
+
+#footer {
+    background: #DF7F40 !important;
+    margin-left: 3px;
+    width: 1250px;
+    height: 150px;
+}
+
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+
+
+   
+}
+
+#footer ul.social li a i {
+   margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-50px;
+}
+
+
+
+

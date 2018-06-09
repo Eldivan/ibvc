@@ -1,32 +1,36 @@
+
+<div class="jumbotron formulario">
+   
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nome</strong>
   <%= @user.name %>
 </p>
 
 <p>
-  <strong>Sex:</strong>
+  <strong>Sexo:</strong>
   <%= @user.sex %>
 </p>
 
 <p>
-  <strong>Cpf:</strong>
+  <strong>CPF:</strong>
   <%= @user.cpf %>
 </p>
 
 <p>
-  <strong>Identity:</strong>
+  <strong>Identitade:</strong>
   <%= @user.identity %>
 </p>
 
 <p>
-  <strong>Date birth:</strong>
+  <strong>Data de Aniversário:</strong>
   <%= @user.date_birth %>
 </p>
 
 <p>
-  <strong>Cell phone:</strong>
+  <strong>Celular:</strong>
   <%= @user.cell_phone %>
 </p>
 
@@ -36,29 +40,32 @@
 </p>
 
 <p>
-  <strong>Date inclusion:</strong>
+  <strong>Data inclusão:</strong>
   <%= @user.date_inclusion %>
 </p>
 
 <p>
-  <strong>Marital status:</strong>
+  <strong>Estado Civil:</strong>
   <%= @user.marital_status %>
 </p>
 
 <p>
-  <strong>Professional:</strong>
+  <strong>Profissão:</strong>
   <%= @user.professional %>
 </p>
-
+<!--
 <p>
   <strong>Admin:</strong>
   <%= @user.admin %>
 </p>
-
+-->
 <p>
-  <strong>Active:</strong>
+  <strong>Ativo:</strong>
   <%= @user.active %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Editar', edit_user_path(@user) %> |
+<%= link_to 'Voltar', users_path %>
+
+    
+</div>
