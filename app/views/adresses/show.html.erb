@@ -1,0 +1,45 @@
+<div class="jumbotron formulario">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>UF:</strong>
+  <%= @adress.uf %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @adress.city %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @adress.neighborhood %>
+</p>
+
+<p>
+  <strong>Quadra:</strong>
+  <%= @adress.quartrain %>
+</p>
+
+<p>
+  <strong>Conjunto:</strong>
+  <%= @adress.set %>
+</p>
+
+<p>
+  <strong>Bloco:</strong>
+  <%= @adress.block %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @adress.number %>
+</p>
+
+<p>
+  <strong>Condominio:</strong>
+  <%= @adress.townhouse %>
+</p>
+</div>
+<%= link_to 'Editar', edit_adress_path(@adress) %> |
+<%= link_to 'Voltar', adresses_path %>

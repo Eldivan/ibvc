@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :adresses
   root 'welcome#home'
   resources :users
   

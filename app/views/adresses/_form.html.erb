@@ -1,0 +1,65 @@
+<div class="jumbotron formulario">
+
+ <%= form_with(model: adress, local: true) do |form| %>
+  <% if adress.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(adress.errors.count, "error") %> prohibited this adress from being saved:</h2>
+
+      <ul>
+      <% adress.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+     <div class="field">
+    <%= form.label :UF %>
+    <%= form.text_field :uf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CIDADE %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :BAIRRO %>
+    <%= form.text_field :neighborhood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :QUADRA %>
+    <%= form.text_field :quartrain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CONJUNTO %>
+    <%= form.text_field :set %>
+  </div>
+
+  <div class="field">
+    <%= form.label :BLOCO %>
+    <%= form.text_field :block %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NUMERO %>
+    <%= form.text_field :number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CONDOMINIO %>
+    <%= form.text_field :townhouse %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Código_do_Usuário %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="Enviar">
+    <%= form.submit %>
+  </div>
+ <% end %>
+</div>
