@@ -1,0 +1,26 @@
+<div class="jumbotron formulario">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @child.name %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @child.sex %>
+</p>
+
+<p>
+  <strong>Data de Aniversário:</strong>
+  <%= @child.date_birth %>
+</p>
+
+<p>
+  <strong>Código do Responsável:</strong>
+  <%= @child.user %>
+</p>
+</div>
+
+<%= link_to 'Editar', edit_child_path(@child) %> |
+<%= link_to 'Voltar', children_path %>

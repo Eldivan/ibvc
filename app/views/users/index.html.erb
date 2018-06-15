@@ -1,6 +1,8 @@
+
+<div class="jumbotron formulario">
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<h1>Usuario</h1>
 
 <table class="table table-striped">
   <thead>
@@ -38,12 +40,12 @@
         <td><%= user.active %></td>
         <td><%= link_to 'Mostrar', user %></td>
         <td><%= link_to 'Editar', edit_user_path(user) %></td>
-        <td><%= link_to 'Apagar', user, method: :delete, data: { confirm: 'Tem certeza da exclusão ?' } %></td>
+        <td><%= link_to 'Apagar', user, method: :delete, data: { confirm: 'Tem certeza da excluir ?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
+</div>
 <%= link_to 'Novo Usuário', new_user_path %>

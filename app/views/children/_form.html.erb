@@ -1,0 +1,40 @@
+<div class="jumbotron formulario">
+
+<%= form_with(model: child, local: true) do |form| %>
+  <% if child.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(child.errors.count, "error") %> prohibited this child from being saved:</h2>
+
+      <ul>
+      <% child.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Nome %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexo %>
+     select("post", "category", post::CATEGORIES, {include_blank:true})
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_De_Nascimento %>
+    <%= form.date_select :date_birth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Código_Do_Responsável %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>

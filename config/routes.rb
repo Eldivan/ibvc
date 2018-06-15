@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :courses
+  resources :events
+  resources :departaments
+  resources :children
   resources :adresses
   root 'welcome#home'
   resources :users
