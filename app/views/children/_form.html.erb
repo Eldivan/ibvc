@@ -20,7 +20,7 @@
 
   <div class="field">
     <%= form.label :sexo %>
-     select("post", "category", post::CATEGORIES, {include_blank:true})
+     <%=select("child", "sex", ['masculino' , 'feminino'], {include_blank: true})%>  
   </div>
 
   <div class="field">
@@ -34,7 +34,9 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+     <button type="submit" class="btn btn-primary">Enviar</button>
+   <!-- <%= form.submit %> -->
+
   </div>
 <% end %>
 </div>

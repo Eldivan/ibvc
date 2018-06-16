@@ -1,3 +1,4 @@
+<div class="jumbotron formulario">
 <%= form_with(model: departament, local: true) do |form| %>
   <% if departament.errors.any? %>
     <div id="error_explanation">
@@ -12,12 +13,12 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :Nome %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :departament_head %>
+    <%= form.label :Lider_departamento %>
     <%= form.text_field :departament_head %>
   </div>
 
@@ -25,7 +26,7 @@
     <%= form.label :user_id %>
     <%= form.text_field :user_id %>
   </div>
-
+</div>
   <div class="actions">
     <%= form.submit %>
   </div>

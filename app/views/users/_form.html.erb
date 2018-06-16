@@ -16,11 +16,13 @@
   <div class="nome">
     <%= form.label 'Nome' %> <%=form.label:* %>
     <%= form.text_field :name, class: 'form-control',placeholder:'Nome'%>
+    <br>
   </div>
 
   <div class="field">
     <%= form.label :sexo %>
-    <%= form.text_field :sex , class: 'form-control',placeholder:'Sexo' %>
+     <%=select("child", "sex", ['masculino' , 'feminino'], {include_blank: true})%>  
+    
   </div>
 
   <div class="field">

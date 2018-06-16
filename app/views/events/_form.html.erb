@@ -1,3 +1,4 @@
+<div class="jumbotron formulario">
 <%= form_with(model: event, local: true) do |form| %>
   <% if event.errors.any? %>
     <div id="error_explanation">
@@ -12,17 +13,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :Nome %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :date_event %>
+    <%= form.label :Data_do_Evento %>
     <%= form.date_select :date_event %>
   </div>
 
   <div class="field">
-    <%= form.label :responsible %>
+    <%= form.label :responsavel %>
     <%= form.text_field :responsible %>
   </div>
 
@@ -30,3 +31,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+</div>

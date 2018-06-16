@@ -20,7 +20,7 @@
         <td><%= child.name %></td>
         <td><%= child.sex %></td>
         <td><%= child.date_birth %></td>
-        <td><%= child.user %></td>
+        <td><%= child.user.id %></td>
         <td><%= link_to 'Mostrar', child %></td>
         <td><%= link_to 'Editar', edit_child_path(child) %></td>
         <td><%= link_to 'Excluir', child, method: :delete, data: { confirm: 'Tem certeza da exclusão ?' } %></td>

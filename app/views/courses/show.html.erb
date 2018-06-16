@@ -1,17 +1,18 @@
+<div class="jumbotron formulario">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nome:</strong>
   <%= @course.name %>
 </p>
 
 <p>
-  <strong>Start date:</strong>
+  <strong>Data_Inicio:</strong>
   <%= @course.start_date %>
 </p>
 
 <p>
-  <strong>End date:</strong>
+  <strong>Data_Fim:</strong>
   <%= @course.end_date %>
 </p>
 
@@ -19,6 +20,6 @@
   <strong>User:</strong>
   <%= @course.user %>
 </p>
-
-<%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>
+</div>
+<%= link_to 'Editar', edit_course_path(@course) %> |
+<%= link_to 'Voltar', courses_path %>
