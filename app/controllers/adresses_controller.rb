@@ -1,5 +1,6 @@
 class AdressesController < ApplicationController
   before_action :set_adress, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!
 
   # GET /adresses
   # GET /adresses.json
